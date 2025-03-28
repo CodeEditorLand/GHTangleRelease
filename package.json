@@ -1,9 +1,32 @@
 {
 	"name": "gh-tangle-release",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Create a release and adds metadata to the IOTA Tangle",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/GHTangleRelease#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/GHTangleRelease/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/GHTangleRelease.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "dist/index.js",
 	"scripts": {
-		"build": "ncc build src/main.js"
+		"build": "ncc build src/main.js",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"jest": {
 		"collectCoverageFrom": [
@@ -28,6 +51,10 @@
 		"axios": "1.8.4"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@zeit/ncc": "0.22.3"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
