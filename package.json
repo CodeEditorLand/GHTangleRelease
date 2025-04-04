@@ -51,7 +51,7 @@
 		"axios": "1.8.4"
 	},
 	"devDependencies": {
-		"@playform/build": "0.2.1",
+		"@playform/build": "0.2.2",
 		"@zeit/ncc": "0.22.3"
 	},
 	"publishConfig": {
