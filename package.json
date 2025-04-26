@@ -48,7 +48,7 @@
 		"@actions/github": "6.0.0",
 		"@iota/converter": "1.0.0-beta.30",
 		"@iota/core": "1.0.0-beta.30",
-		"axios": "1.8.4"
+		"axios": "1.9.0"
 	},
 	"devDependencies": {
 		"@playform/build": "0.2.3",
