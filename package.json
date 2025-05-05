@@ -1,33 +1,26 @@
 {
-	"name": "gh-tangle-release",
-	"version": "0.0.1",
-	"private": false,
-	"description": "Create a release and adds metadata to the IOTA Tangle",
-	"keywords": [
-		"codeeditorland",
-		"land",
-		"playform"
-	],
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/GHTangleRelease#readme",
+	"author": {
+		"email": "Source/Open@Editor.Land",
+		"name": "Source 🖋️ Open 👐🏻",
+		"url": "HTTPS://Editor.Land"
+	},
 	"bugs": {
 		"url": "HTTPS://GitHub.Com/CodeEditorLand/GHTangleRelease/issues"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/GHTangleRelease.git"
+	"dependencies": {
+		"@actions/core": "^1.2.0",
+		"@actions/exec": "^1.0.2",
+		"@actions/github": "^2.0.0",
+		"@iota/converter": "^1.0.0-beta.23",
+		"@iota/core": "^1.0.0-beta.24",
+		"axios": "0.18.1"
 	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Source 🖋️ Open 👐🏻",
-		"email": "Source/Open@Editor.Land",
-		"url": "HTTPS://Editor.Land"
+	"description": "Create a release and adds metadata to the IOTA Tangle",
+	"devDependencies": {
+		"@playform/build": "0.2.3",
+		"@zeit/ncc": "^0.20.5"
 	},
-	"type": "module",
-	"main": "dist/index.js",
-	"scripts": {
-		"build": "ncc build src/main.js",
-		"prepublishOnly": "Build 'Source/**/*.ts'"
-	},
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/GHTangleRelease#readme",
 	"jest": {
 		"collectCoverageFrom": [
 			"src/tangle-release.js"
@@ -42,19 +35,26 @@
 		},
 		"testEnvironment": "node"
 	},
-	"dependencies": {
-		"@actions/core": "^1.2.0",
-		"@actions/exec": "^1.0.2",
-		"@actions/github": "^2.0.0",
-		"@iota/converter": "^1.0.0-beta.23",
-		"@iota/core": "^1.0.0-beta.24",
-		"axios": "0.18.1"
-	},
-	"devDependencies": {
-		"@playform/build": "0.2.3",
-		"@zeit/ncc": "^0.20.5"
-	},
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"license": "SEE LICENSE IN LICENSE",
+	"main": "dist/index.js",
+	"name": "gh-tangle-release",
+	"private": false,
 	"publishConfig": {
 		"access": "public"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/GHTangleRelease.git"
+	},
+	"scripts": {
+		"build": "ncc build src/main.js",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
+	},
+	"type": "module",
+	"version": "0.0.1"
 }
